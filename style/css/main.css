@@ -1,0 +1,234 @@
+html,body {
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+}
+
+html #home,body #home {
+  background-color: inherit;
+}
+
+nav {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.graph {
+  background: rgb(255, 255, 255);
+  height: calc(100vh - 20px);
+}
+
+#graph-canvas[resize] {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  cursor: pointer !important;
+}
+
+.bg-nav {
+  background: -webkit-gradient(linear, left bottom, right top, from(#00bf8f), to(#102d58));
+  background: linear-gradient(to top right, #00bf8f, #102d58);
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: 0.8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 0.8rem;
+  margin-right: 0.1rem;
+  background-color: rgba(238, 234, 234, 0.918);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.863);
+}
+
+.header_title {
+  font-size: 120%;
+  font-weight: bold;
+  padding-bottom: 5px;
+  margin-top: -10px;
+}
+
+.option_header {
+  font-size: 80%;
+  margin-left: 20px;
+}
+
+.option_label {
+  cursor: pointer;
+}
+
+#tutorial {
+  top: 22px;
+  left: 10px;
+  width: 1260px;
+  position:absolute;
+  background:rgba(5, 29, 0, 0.952);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.863);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.speed-weight {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.863);
+  color: rgb(255, 255, 255);
+  width: 145px;
+  border-radius: 8px;
+}
+
+.sub_options {
+  padding: 2px;
+  font-size: 14px;
+  margin: 2px 30px 0;
+  width: 200px;
+}
+
+.panel {
+  position: fixed;
+  padding: 15px;
+  background-color: rgba(34, 34, 34, 0.918);
+  color: rgb(200, 218, 102);
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.863);
+  width: 300px;
+  height:470px;
+  margin-top: 70px;
+  overflow: scroll;
+  cursor: default;
+}
+
+.radioLeft {
+  display: block;
+  text-align: left;
+}
+
+a {
+  color: rgb(44, 54, 85);
+}
+
+footer {
+  color: #333;
+  font-size: 70%;
+  text-align: center;
+  position: fixed;
+  width: 200px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -100px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#algorithm_panel {
+  right: 20px;
+  top: 15px;
+}
+
+#info_panel {
+  position: fixed;
+  left: 10px;
+  bottom: 10px;
+  height: 100px;
+}
+
+.spinner {
+  width: 2em;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(116, 178, 214);
+}
+
+.dropbtn {
+  border: 2px;
+  margin-bottom: 4px;
+  border-color: rgb(228, 212, 169);
+  background-color: rgba(255, 255, 255, 0.555);
+  text-align: center;
+}
+
+.dropdown_btn {
+  width: 120px;
+  margin-right: 10px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 240px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.speed-box {
+  display: block;
+  position: fixed;
+  align-self: center;
+  color: rgb(201, 201, 201);
+  background-color: #0e0e0ed0;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+#algorithm_panel {
+  position: absolute;
+  z-index: 9;
+  left: 80%;
+}
+
+#algorithm_panelheader {
+  cursor: move;
+  z-index: 10;
+}
+.info_right_panel{
+ 
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+}
+
+#info_panel {
+  width: 300px;
+  right: 20px;
+ 
+}
+h5{
+  
+  display: inline-block;
+}
+
+footer {
+  color: #333;
+  font-size: 70%;
+  text-align: center;
+  position: fixed;
+  width: 200px;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -100px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
