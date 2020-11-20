@@ -32,7 +32,7 @@
          crossorigin="anonymous"
          />
       <link rel="stylesheet" href="style/css/main.css" />
-      <title>Pirates On Mars☠️</title>
+      <title>Shortest Path Finder</title>
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165471746-1"></script>
       <script>
@@ -155,16 +155,11 @@
                                 Weight
                              </button>
 
-                              <label for="weightedAlgo" style="padding: 2px; margin-top:7px;">
-                                <input type="checkbox" style="padding: 3px; margin-top:7px;" id="weightedAlgo" onclick="ShowHideDiv(this)"/>
-                                Show Unweighted
-                            </label>
                             <label for="intermediateNodes" style="padding: 2px; margin-top:7px;">
                                 <input type="checkbox" style="padding: 3px; margin-top:7px;" id="intermediateNodes" onclick="ShowHideDiv2(this)"/>
                                 Allow Stations
                             </label>
-                            <!--MULTIPLE STOPS TEXT BOX-->
-                            <input type="number" class="spinner" name="max_cost" style="width: 125px; height: 32px; border-radius: 6px; border-color: rgb(0,0,0);" title="Maximum Cost for Multiple Stops" id="maxcost" min="0" placeholder="Maximum Cost">
+                           
                            </h6>
                         </div>
                         
@@ -221,8 +216,7 @@
                                     <div class="panel-body">
                                     <h4 class="text-center">About</h4>
                                   </div>
-                                  Captain! Are you excited to begin your next space adventure? Pull up your socks and get ready for your journey on Mars.We are aware
-                                   that when you're out there, you'll need a trustworthy <br>path finder to aid you. And thus, we put together this application for you!<br><br>
+                            
                                   <strong class="text-info">The Grid: </strong> A graph, with each cell representing a node. Each cell is connected to adjacent
                                   cells horizontally, vertically, and diagonally by invisible edges that (by default) cost to traverse.<br>
                                   Click on <i>Start Node</i> and <i>End Node</i> buttons to move around the <i>Source</i> and <i>Destination</i> nodes respectively.
@@ -244,11 +238,7 @@
                                        <br><b>Dijkstra</b>.<br>
                                       2. Traveling Salesman - Define <i><b>intermediate stations</b></i> and find the least cost path that starts from the <i>source</i>, 
                                       covers all intermediate points <i>(stations)</i>, reaches the <i>destination</i> at some <br>point and returns to the source. The <b>Traveling 
-                                      Salesman</b> algorithm does this for you.<br>3. <b><i>Path optimization with a maximum cost constraint</i></b> - Suppose your rover is on a 
-                                      mission. Every intermediate station is a <b><i>place for you to stock up on food supplies</i></b>. But alas, 
-                                      your rover<br> has a limited amount of fuel, and you must reach the <i>destination</i> before you run out. The <b>Multiple Stops</b> 
-                                      algorithm tries to optimize at every point, so that with the <br>available fuel, you can reach your destination, while visiting as many 
-                                      stations as you can, on your way there.
+                                      Salesman</b> algorithm does this for you.<br>  
                                 </span></span></div>
                               </div>
                            </div>
@@ -297,8 +287,7 @@
                          <div class="optional sub_options radioLeft">
                                <input type="checkbox" class="allow_diagonal" checked>
                                <label class="option_label">Allow Diagonal</label> <br>
-                               <input type="checkbox" class="bi_directional">
-                               <label class="option_label">Bi-directional</label> <br>
+                              
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
                          </div>
@@ -319,22 +308,12 @@
                          <div class="optional sub_options radioLeft">
                                <input type="checkbox" class="allow_diagonal" checked>
                                <label class="option_label">Allow Diagonal</label> <br>
-                               <input type="checkbox" class="bi_directional">
-                               <label class="option_label">Bi-directional</label> <br>
+                              
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
                          </div>
-                              <h5>Heuristic</h5>
-                         <div id="best_first_heuristic" class="sub_options radioLeft">
-                               <input type="radio" name="best_first_heuristic" value="manhattan" checked />
-                               <label class="option_label">Manhattan</label> <br>
-                               <input type="radio" name="best_first_heuristic" value="euclidean"/>
-                               <label class="option_label">Euclidean</label> <br>
-                               <input type="radio" name="best_first_heuristic" value="octile"/>
-                               <label class="option_label">Octile</label> <br>
-                               <input type="radio" name="best_first_heuristic" value="chebyshev"/>
-                               <label class="option_label">Chebyshev</label> <br>
-                         </div>
+                             
+                         
                       </div>
                    </div>
                 </div>
@@ -352,22 +331,11 @@
                          <div class="optional sub_options radioLeft">
                                <input type="checkbox" class="allow_diagonal" checked>
                                <label class="option_label">Allow Diagonal</label> <br>
-                               <input type="checkbox" class="bi_directional">
-                               <label class="option_label">Bi-directional</label> <br>
+                               
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
                          </div>
-                              <h5>Heuristic</h5>
-                         <div id="a_star_heuristic" class="sub_options radioLeft">
-                               <input type="radio" name="a_star_heuristic" value="manhattan" checked />
-                               <label class="option_label">Manhattan</label> <br>
-                               <input type="radio" name="a_star_heuristic" value="euclidean"/>
-                               <label class="option_label">Euclidean</label> <br>
-                               <input type="radio" name="a_star_heuristic" value="octile"/>
-                               <label class="option_label">Octile</label> <br>
-                               <input type="radio" name="a_star_heuristic" value="chebyshev"/>
-                               <label class="option_label">Chebyshev</label> <br>
-                         </div>
+                             
                       </div>
                    </div>
                 </div>
@@ -388,17 +356,7 @@
                            <input type="checkbox" class="dont_cross_corners">
                            <label class="option_label">Don't Cross Corners</label> <br>
                      </div>
-                          <h5>Heuristic</h5>
-                     <div id="travel_sales_heuristic" class="sub_options radioLeft">
-                           <input type="radio" name="travel_sales_heuristic" value="manhattan" checked />
-                           <label class="option_label">Manhattan</label> <br>
-                           <input type="radio" name="travel_sales_heuristic" value="euclidean"/>
-                           <label class="option_label">Euclidean</label> <br>
-                           <input type="radio" name="travel_sales_heuristic" value="octile"/>
-                           <label class="option_label">Octile</label> <br>
-                           <input type="radio" name="travel_sales_heuristic" value="chebyshev"/>
-                           <label class="option_label">Chebyshev</label> <br>
-                     </div>
+                          
                   </div>
                </div>
             </div>
@@ -418,19 +376,9 @@
                                <label class="option_label">Allow Diagonal</label> <br>
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
-                               <p>Set the maximum cost for this algo in the above text box</p>
+                               
                          </div>
-                              <h5>Heuristic</h5>
-                         <div id="multi_stop_heuristic" class="sub_options radioLeft">
-                               <input type="radio" name="multi_stop_heuristic" value="manhattan" checked />
-                               <label class="option_label">Manhattan</label> <br>
-                               <input type="radio" name="multi_stop_heuristic" value="euclidean"/>
-                               <label class="option_label">Euclidean</label> <br>
-                               <input type="radio" name="multi_stop_heuristic" value="octile"/>
-                               <label class="option_label">Octile</label> <br>
-                               <input type="radio" name="multi_stop_heuristic" value="chebyshev"/>
-                               <label class="option_label">Chebyshev</label> <br>
-                         </div>
+                             
                       </div>
                    </div>
                 </div>
@@ -451,17 +399,7 @@
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
                          </div>
-                              <h5>Heuristic</h5>
-                         <div id="idastar_heuristic" class="sub_options radioLeft">
-                               <input type="radio" name="idastar_heuristic" value="manhattan" checked />
-                               <label class="option_label">Manhattan</label> <br>
-                               <input type="radio" name="idastar_heuristic" value="euclidean"/>
-                               <label class="option_label">Euclidean</label> <br>
-                               <input type="radio" name="idastar_heuristic" value="octile"/>
-                               <label class="option_label">Octile</label> <br>
-                               <input type="radio" name="idastar_heuristic" value="chebyshev"/>
-                               <label class="option_label">Chebyshev</label> <br>
-                         </div>
+                              
                       </div>
                    </div>
                 </div>
@@ -479,8 +417,7 @@
                          <div class="optional sub_options radioLeft">
                                <input type="checkbox" class="allow_diagonal" checked>
                                <label class="option_label">Allow Diagonal</label> <br>
-                               <input type="checkbox" class="bi_directional">
-                               <label class="option_label">Bi-directional</label> <br>
+                               
                                <input type="checkbox" class="dont_cross_corners">
                                <label class="option_label">Don't Cross Corners</label> <br>
                          </div>
@@ -513,7 +450,7 @@
           </div>
 
           <footer>
-            Project Hosted on <a href="https://github.com/gowrijp/Codess-2020">Github</a>
+            Project Hosted on <a href="https://github.com/shreoshi-roy/Shortest-Pathfinder">Github</a>
           </footer>
 
             <section class="graph d-flex justify-content-center row" id="grid">
